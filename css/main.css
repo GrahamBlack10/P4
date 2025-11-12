@@ -1,11 +1,335 @@
-.footer {
-    position: fixed;
+/* DEVELOPER: Graham Black, IS117-001, Fall 2025 */
+
+/* Base styles */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f8f6;
+    color: #525b6a;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: darkgrey;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fa6964;
+}
+
+.navbar .nav-link {
+    color: #f9f8f6;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #33bab3;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f9f8f6;
+    margin-bottom: 2rem; /* Added spacing below hero */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
+    right: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero>* {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: #fa6964;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: #f9f8f6;
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #33bab3;
+    border-color: #33bab3;
+    transition: background 0.3s, border 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #fa6964;
+    border-color: #fa6964;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f8f6;
+    color: #525b6a;
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
     width: 100%;
-    background-color: aliceblue;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h5 {
+    color: #fa6964;
+}
+
+.card p {
+    color: #525b6a;
+}
+
+/* Footer */
+footer {
+    background-color: #525b6a;
+    color: #f9f8f6;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 2px solid #33bab3;
+    flex-shrink: 0; /* ensures footer doesn’t shrink */
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+pre {
+    background: #222;
+    color: #00ffcc;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.page-header {
+    background-color: #33bab3;
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 0.5rem;
+    padding: 80px 20px;
+    margin-bottom: 50px;
+}
+
+/* Steps / List Items */
+.list {
+    position: relative;
+    padding-left: 30px;
+}
+
+.list-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 40px;
+}
+
+.list-item .step-number {
+    position: absolute;
+    left: -3px;
+    top: 0;
+    background: #fa6964;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.list-item h5,
+.list-item p {
+    color: #525b6a;
+}
+
+.list-item p {
+    margin-top: 10px;
+}
+
+/* Images inside content */
+.animation-image,
+.basic-tools-image,
+.editor-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Step content containers */
+.step-content {
+    padding: 2rem;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Section / Aside / Division Float Layout */
+section,
+aside,
+.division {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+section:last-child,
+aside:last-child,
+.division:last-child {
+    margin-right: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    section,
+    aside,
+    .division {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+
+    section:last-child,
+    aside:last-child,
+    .division:last-child {
+        margin-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card h5 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .list-item {
+        padding-left: 20px;
+    }
+
+    .list::before {
+        left: 10px;
+    }
+
+    .list-item .step-number {
+        left: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .page-header {
+        padding: 60px 10px;
+    }
 }

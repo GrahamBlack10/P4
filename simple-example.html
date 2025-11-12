@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Unity Learning Guide</title>
+    <title>Simple Example | Unity Learning Guide</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
@@ -26,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="getting-started.html">Getting Started</a>
@@ -52,51 +51,58 @@
         </div>
     </nav>
 
-    <!-- Jumbotron -->
-    <div class="hero p-5 mb-4 text-center">
-        <div class="container py-5">
-            <h1 class="display-4 fw-bold">Welcome to Unity Learning Guide</h1>
-            <p class="lead">Your step-by-step path to creating 3D games in Unity, from beginner to confident creator.
-            </p>
-            <a class="btn btn-primary btn-lg mt-3" href="getting-started.html" role="button">Start Learning</a>
+    <div class="page-header py-5 mb-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold">Unity Simple Example: Create a Sphere</h1>
+            <p class="lead">Step-by-step guide to creating a sphere and applying a material in Unity.</p>
         </div>
     </div>
 
+    <!-- Steps -->
+    <section class="container mb-5">
 
-    <!-- Cards Section -->
-    <section class="container my-5">
-        <div class="row text-center g-4">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/step-by-step.jpg" class="card-img-top" alt="Step by Step Tutorial">
-                    <div class="card-body">
-                        <h5 class="card-title">Getting Started</h5>
-                        <p class="card-text">Learn how to install Unity, create your first project, and explore the
-                            interface.</p>
-                    </div>
+        <div class="step-content mb-5 p-4 bg-light rounded shadow">
+            <h2 class="step-title mb-3"><span class="step-number me-2">1</span>Add a Sphere</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>In the Unity menu, go to <strong>GameObject → 3D Object → Sphere</strong> to add a sphere to your
+                        scene. This will create a new sphere at the center of your scene view.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/tool.jpg" class="card-img-top" alt="Basic Tools">
-                    <div class="card-body">
-                        <h5 class="card-title">Basic Tools</h5>
-                        <p class="card-text">Understand Unity's essential tools, creating objects, scripts, and
-                            animations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="images/simpexample.jpg" class="card-img-top" alt="Simple Example">
-                    <div class="card-body">
-                        <h5 class="card-title">Simple Example</h5>
-                        <p class="card-text">Follow a guided example to create a simple object and modify its materials.
-                        </p>
-                    </div>
+                <div class="col-md-6">
+                    <img src="images/sphere.png" class="img-fluid rounded shadow" alt="Add Sphere">
                 </div>
             </div>
         </div>
+
+        <div class="step-content mb-5 p-4 bg-light rounded shadow">
+            <h2 class="step-title mb-3"><span class="step-number me-2">2</span>Create a Material</h2>
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6">
+                    <p>Right-click in the Project window → <strong>Create → Material</strong>. Name the material
+                        <strong>BlueMaterial</strong> and in the Inspector, change its color to blue. This material will
+                        be applied to the sphere to change its appearance.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/material.png" class="img-fluid rounded shadow" alt="Create Material">
+                </div>
+            </div>
+        </div>
+
+        <div class="step-content mb-5 p-4 bg-light rounded shadow">
+            <h2 class="step-title mb-3"><span class="step-number me-2">3</span>Apply Material</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Drag and drop <strong>BlueMaterial</strong> onto your sphere in the Scene. The sphere will now
+                        appear with the blue material applied, showing how materials affect object appearance in Unity.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/addmaterial.png" class="img-fluid rounded shadow" alt="Apply Material">
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Footer -->

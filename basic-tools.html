@@ -1,0 +1,123 @@
+<!-- DEVELOPER: Graham Black, IS117-001, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Tools | Unity Learning Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="50" height="50" class="me-2">
+                Unity Learning Guide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="getting-started.html">Getting Started</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="basic-tools.html" id="basicToolsDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Basic Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="basicToolsDropdown">
+                            <li><a class="dropdown-item" href="basic-tools.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="simple-example.html">Simple Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tips.html">Tips & Tricks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1 class="fw-bold">Unity Basic Tools</h1>
+        <h4 class="lead"><strong>Learn how to create objects, write scripts, and animate in Unity.</strong></h4>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="list">
+
+                    <div class="list-item">
+                        <div class="step-number">1</div>
+                        <h5>Creating Objects</h5>
+                        <p>Go to <strong>GameObject > 3D Object > Cube</strong>. Use the Move, Rotate, and Scale tools
+                            from the toolbar to shape it as desired.</p>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="step-number">2</div>
+                        <h5>Writing Scripts</h5>
+                        <p>Right-click in the <strong>Project Window > Create > C# Script</strong>. Name it
+                            <strong>PlayerMovement.cs</strong> and attach it to an object by dragging it onto the object
+                            in the Hierarchy.
+                        </p>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="step-number">3</div>
+                        <h5>Creating Animations</h5>
+                        <p>Open the <strong>Animation Window</strong>. Select your object, click <strong>Create
+                                Animation</strong>, and record simple changes such as movement, rotation, scaling, or
+                            color adjustments.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="images/animation.png" class="animation-image" alt="Unity Animation">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Use Unity's Animation window to create simple animations like
+                            movement, scaling, to your objects.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="image-container">
+                        <img src="images/basic-tools.png" class="basic-tools-image" alt="Unity Basic Tools Interface">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Use Unity's hierarchy, inspector, and project windows to manage objects,
+                            scripts, and assets effectively.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3 text-center">
+        <small>&copy; Graham Black, 2025 | Terms of Use | Privacy Policy</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
