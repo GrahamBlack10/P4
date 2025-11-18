@@ -58,7 +58,7 @@ main {
     align-items: center;
     text-align: center;
     color: #f9f8f6;
-    margin-bottom: 2rem; /* Added spacing below hero */
+    margin-bottom: 2rem;
 }
 
 .hero::before {
@@ -136,7 +136,7 @@ footer {
     padding: 15px 0;
     text-align: center;
     border-top: 2px solid #33bab3;
-    flex-shrink: 0; /* ensures footer doesn’t shrink */
+    flex-shrink: 0;
 }
 
 /* Lists */
@@ -200,7 +200,6 @@ pre {
     margin-top: 10px;
 }
 
-/* Images inside content */
 .animation-image,
 .basic-tools-image,
 .editor-screenshot {
@@ -211,7 +210,6 @@ pre {
     margin-bottom: 1rem;
 }
 
-/* Step content containers */
 .step-content {
     padding: 2rem;
     background: #f1f1f1;
